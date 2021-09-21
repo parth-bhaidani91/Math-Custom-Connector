@@ -22,3 +22,5 @@
 6. Update connector
 
 Now, your custom connector is ready!
+
+More Details: https://parthbhaidani.com/2021/09/19/power-automate-flow-supports-c-sharp-code/
