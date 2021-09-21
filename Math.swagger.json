@@ -1,0 +1,156 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Default title",
+    "description": "Provides access to Round, Ceiling and Floor functions.",
+    "version": "1.0"
+  },
+  "host": "microsoft.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/": {},
+    "/math-round": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number",
+                  "format": "float",
+                  "description": "Output of the Math Operation",
+                  "title": "Value"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Round",
+        "description": "Rounds a value to the nearest integer.",
+        "operationId": "MATH_ROUND",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Number": {
+                  "type": "number",
+                  "format": "float",
+                  "description": "Value for the operation.",
+                  "title": "Number"
+                }
+              },
+              "required": [
+                "Number"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/math-ceiling": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number",
+                  "format": "float",
+                  "description": "Output of the Math Operation",
+                  "title": "Value"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Ceiling",
+        "description": "Returns the smallest integral value greater than or equal to the specified number.",
+        "operationId": "MATH_CEILING",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Number": {
+                  "type": "number",
+                  "format": "float",
+                  "description": "Value for the operation.",
+                  "title": "Number"
+                }
+              },
+              "required": [
+                "Number"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/math-floor": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number",
+                  "format": "float",
+                  "description": "Output of the Math Operation",
+                  "title": "Value"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Floor",
+        "description": "Returns the largest integral value less than or equal to the specified number.",
+        "operationId": "MATH_FLOOR",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Number": {
+                  "type": "number",
+                  "format": "float",
+                  "description": "Value for the operation",
+                  "title": "Number"
+                }
+              },
+              "required": [
+                "Number"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
